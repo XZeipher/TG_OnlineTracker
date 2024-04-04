@@ -13,13 +13,13 @@ if os.path.exists("local.env"):
 
 
 
-session_name = getenv(STRING_SESSION)
-APP_ID = getenv(APP_ID)
-API_HASH = getenv(API_HASH)
-USER = getenv(USER)
-DUMP_CHAT = getenv(DUMP_CHAT)
-UPDATE_TIME = getenv(UPDATE_TIME)
-UPDATE_TIME = int(UPDATE_TIME)
+session_name = getenv('STRING_SESSION')
+APP_ID = getenv('APP_ID')
+API_HASH = getenv('API_HASH')
+USER = getenv('USER')
+DUMP_CHAT = getenv('DUMP_CHAT')
+UPDATE_TIME = getenv('UPDATE_TIME')
+UPDATE_TIME = int('UPDATE_TIME')
 try:
     DUMP_CHAT = int(DUMP_CHAT)
 except:
