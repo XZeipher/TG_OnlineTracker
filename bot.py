@@ -29,7 +29,7 @@ except:
 globonline = False
 
 
-with Client(session_name,APP_ID,API_HASH) as app:
+with Client('hiudhdh',APP_ID,API_HASH) as app:
     
     print("Starting bot")
 
