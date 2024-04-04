@@ -13,7 +13,7 @@ if os.path.exists("local.env"):
 
 
 
-session_name = getenv('STRING_SESSION')
+session = getenv('STRING_SESSION')
 APP_ID = getenv('APP_ID')
 API_HASH = getenv('API_HASH')
 USER = getenv('USER')
@@ -29,7 +29,7 @@ except:
 globonline = False
 
 
-with Client('hiudhdh',APP_ID,API_HASH) as app:
+with Client('hiudhdh',APP_ID,API_HASH, session_string=session) as app:
     
     print("Starting bot")
 
